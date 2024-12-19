@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="th.jpeg">
     <title>Wheather app</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Wheather App</h1>
+        <!-- section for searching wheather app city -->
+         <form onsubmit="getData(event)" class="searchdata">
+            <input type="text" id="inputbox" placeholder="Enter the city name">
+            <button>Search</button>
+         </form>
+         <section class="citywheatherdata">
+            <div class="countrydetails details">
+                <!-- displaying country name -->
+                <div class="card">
+                    <p>Country name</p>
+                    <p id="countryName">_</p>
+                </div>
+                <!-- displaying state name -->
+                 <div class="card">
+                    <p>State name</p>
+                    <p id="stateName">_</p>
+                 </div>
+                 <!-- displaying city details -->
+                 <div class="card">
+                    <p>City name</p>
+                    <p id="CityName">_</p>
+                 </div>
+            </div>
+            <div class="wheatherdetails details">
+                <!-- displaying the humidity -->
+                <div class="card">
+                    <p>Humidity</p>
+                    <P id="humidity">_</P>
+                </div>
+                <!-- displaying wind speed -->
+                <div class="card">
+                    <p>Wndow speed</p>
+                    <P ><span id="windowspeed">_ </span>Kmph</P>
+                </div>
+                <!-- displaying temperture -->
+                <div class="card">
+                <p>Temperture</p>
+                <P ><span id="temperture">_ </span>&#8451;</P>
+            </div>
+            <!-- displaying wheather condition -->
+             <div class="card image">
+                <img  src=""alt="icon" id="logoimage">
+                <p id="wheatherstatus">_</p>
+             </div>
+            </div>
+         </section>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
